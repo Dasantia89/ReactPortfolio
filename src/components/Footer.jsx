@@ -5,7 +5,6 @@ export default function Footer() {
         <section className ="Container">
             <p className ="Label">Contact Me</p>
             <section id="contacts">
-                <a className ="contact" href="tel:6031112298">631.896.3894</a>
                 <a className ="contact" href="mailto:dasantia89@yahoo.com">dasantia89@yahoo.com</a>
                 <a className ="contact" href="https://github.com/Dasantia89">Github</a>
                 <a className ="contact" href=" https://www.facebook.com/david.a.santiago1/">Facebook</a>
