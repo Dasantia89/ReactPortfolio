@@ -1,74 +1,308 @@
+/* Set variables to be reused */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --light: rgba(234, 247, 245, 0.911);
+  --dark: rgb(67, 72, 77);
+  --darkgreen: #12343b;
+  --dblue: rgb(7, 25, 187);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Make elements display in a column */
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Styling for the header */
+header {
+  background-color: var(--darkgreen);
+  display: flex;
+  padding: 50px 10px 15px 0px;
+  line-height: 50px;
+  justify-content: space-between;
+  width: auto;
+  font-family: Impact, fantasy;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+header h1 {
+  background-color: var(--light);
+  color: var(--darkgreen);
+  font-size: 60px;
+  padding-top: 5px;
+  padding-left: 50px;
 }
 
-.profile-footer {
-  text-align: center;
-  position: fixed;
-  inset: auto 0 0 0;
-  padding: 1em;
+/* Navigation bar styling  */
+nav {
+  padding-right: 50px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+nav ul li {
+  margin: 5px 5px;
+  border-bottom: 2px;
+  border-color: var(--light);
+  border-style: solid;
+  font-size: 30px;
+  padding: 0 5px 0 5px;
+
+}
+
+.link:hover {
+  color: var(--dark);
+}
+
+nav ul li a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+/* Banner Styling */
+figure {
+  height: 250px;
+  width: 100%;
+  background-image: url("./assets/images/frame.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0
+}
+
+figure p {
+  color: var(--light);
+  font-style: italic;
+  padding: 10px;
+  background-color: var(--darkgreen);
+  width: fit-content;
+  height: fit-content;
+  font-size: 40px;
+  font-weight: 1000;
+}
+
+figure img {
+  border-radius: 50%;
+  height: 140px;
+  width: 100px;
+  border: solid 5px var(--darkgreen);
+  flex: 0 5;
+}
+
+/* Styling for the main section  */
+main {
+  background-color: var(--light);
+  color: #12343b;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: auto;
+}
+
+/* Styling for the element that will hold the main content */
+.Container {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+/* styling for the label for each section */
+.Label {
+  margin-left: 0;
+  font-size: 40px;
+  padding-right: 20px;
+  padding-left: 50px;
+  border-right: 5px solid var(--darkgreen);
+  text-align: right;
+  width: 15%;
+  height: auto;
+  margin-right: 40px;
+  color: var(--darkgreen);
+}
+
+/* styling for About me information */
+.Container .info {
+  font-size: 30px;
+  color: var(--darkgreen);
+  width: 70%;
+}
+
+/* Styling for the Work section */
+#apps {
+  width: 75%;
+}
+
+
+/* This app is bigger than the rest  */
+#first-app {
+  width: 90%;
+  height: 400px;
+  border: 5px solid var(--darkgreen);
+  border-radius: 50px;
+}
+
+/* styling of the app images  */
+#apps a .app {
+  width: 44%;
+  height: 200px;
+  margin: 10px 10px 0 0;
+  border: 5px solid var(--darkgreen);
+  border-radius: 50px;
+}
+
+#apps a .app:hover,
+#first-app:hover {
+  border-color: var(--dblue);
+}
+
+/* styling for the parent link to make it so a title can be displayed*/
+.imgholder {
+  position: relative;
+}
+
+/* styling of the title */
+.imgholder h2 {
+  font-size: 25px;
+  margin: 10px;
+  font-weight: 1000;
+  border-bottom: 2px solid;
+}
+
+.imgholder p {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* positioning of the title  */
+.title {
+  position: absolute;
+  bottom: 50px;
+  left: 5px;
+  color: var(--light);
+  background-color: var(--darkgreen);
+  padding: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+section {
+  background-color: rgba(234, 247, 245, 0.911);
+}
+
+
+/* styling for the contact section  */
+#Contact-Me {
+  background-color: rgba(234, 247, 245, 0.911);
+  padding: 20px;
+  width: auto;
+}
+
+/* display contacts inline and wrap if needed */
+#contacts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact {
+  color: black;
+  font-size: 30px;
+  border-bottom: 5px solid var(--darkgreen);
+  margin: 30px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.contact:hover {
+  color: rgb(7, 25, 187);
+  border-color: rgb(7, 25, 187);
+}
+
+/* responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+
+  nav ul,
+  header,
+  section {
+      flex-direction: column;
   }
-  a:hover {
-    color: #747bff;
+
+
+  .Container {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .Container .Label {
+      margin-left: 40px;
+      text-align: center;
+      border: 5px solid var(--darkgreen);
+      margin-bottom: 10px;
+      width: 85%;
   }
+
+
+  #first-app,
+  .imgholder {
+      width: 100%;
+      height: auto;
+  }
+
+  #apps a .app {
+      width: 100%;
+  }
+
+  .title {
+      color: var(--light);
+      background-color: var(--darkgreen);
+      padding: 10px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+  }
+
+  #first-title{
+      color: var(--light);
+      background-color: var(--darkgreen);
+      padding: 10px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+  }
+
+  .imgholder {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .imgholder h2 {
+      font-size: 15px;
+  }
+
+  .imgholder p {
+      font-size: 10px;
+  }
+
+  #Contact-Me {
+      padding-left: 20px;
+  }
+
+  #contacts {
+      align-items: center;
+  }
+
+  .Container .info {
+      font-size: 20px;
+  }
+
+
+
+
+
 }
