@@ -24,7 +24,7 @@ export default function Nav() {
     />
     <figure>
         <p>David Santiago</p>
-        <img src="../../Assets/images/pic.png" alt="Picture of David Santiago"></img>
+        <img src="/assets/images/pic.png" alt="Picture of David Santiago"></img>
         <p>Aspiring Web Developer</p>
 
 
