@@ -11,6 +11,8 @@ body {
   display: flex;
   flex-direction: column;
   width: auto;
+  height: 100%;
+  background-color: rgba(234, 247, 245, 0.911);;
 }
 
 /* Styling for the header */
@@ -110,6 +112,7 @@ main {
   display: flex;
   width: auto;
   height: auto;
+  padding-top : 20px;
 }
 
 /* styling for the label for each section */
@@ -120,7 +123,7 @@ main {
   padding-left: 50px;
   border-right: 5px solid var(--darkgreen);
   text-align: right;
-  width: 15%;
+  width: 20%;
   height: auto;
   margin-right: 40px;
   color: var(--darkgreen);
@@ -196,10 +199,12 @@ section {
 }
 
 
+
 /* styling for the contact section  */
 #Contact-Me {
   background-color: rgba(234, 247, 245, 0.911);
-  padding: 20px;
+  padding-top : 10px;
+  padding-bottom : 10px;
   width: auto;
 }
 
@@ -224,10 +229,14 @@ section {
   border-color: rgb(7, 25, 187);
 }
 
+form {
+  margin: 20px;
+}
+
 /* responsive styling for smaller screens */
 @media screen and (max-width: 768px) {
 
-  nav ul,
+ 
   header,
   section {
       flex-direction: column;
@@ -248,15 +257,9 @@ section {
       width: 85%;
   }
 
-
-  #first-app,
-  .imgholder {
+  #apps a .app, #first-app {
       width: 100%;
-      height: auto;
-  }
-
-  #apps a .app {
-      width: 100%;
+      height: 200px;
   }
 
   .title {
@@ -300,9 +303,5 @@ section {
   .Container .info {
       font-size: 20px;
   }
-
-
-
-
 
 }
