@@ -11,18 +11,18 @@ export default function AboutPage() {
                   <p>Javascript/HTML/Jquery/Bootstrap</p>
               </section>
           </a>
-          <a className="imgholder" href="https://github.com/Santda/Blipp"><img className="app"
-                  src="./assets/images/blipp.png" alt="Blipp social media app"></img>
+          <a className="imgholder" href="https://github.com/espolhemus/GroupProject02"><img className="app"
+                  src="./assets/images/bookmaster.png" alt="Bookmaster"></img>
               <section className="title">
-                  <h2>BLIPP Social Media App</h2>
-                  <p>Android Studio/Firebase</p>
+                  <h2>Book profile app</h2>
+                  <p>Node/Express/Handlebars/Sequelize/Heroku</p>
               </section>
           </a>
-          <a className="imgholder" href="https://github.com/espolhemus/GroupProject02"><img className="app"
-                  src="./assets/images/book.png" alt="Java GPA Calculator app"></img>
+          <a className="imgholder" href="https://github.com/austinoler/budget_planner"><img className="app"
+                  src="./assets/images/moneymaster.png" alt="MoneyMaster"></img>
               <section className="title">
-                  <h2>BookMaster</h2>
-                  <p>Node.js/Express/Sequelize/Tailwind/Handlebars</p>
+                  <h2>Budget Planner</h2>
+                  <p>MongoDB/Express/React/Node/GrahpQL</p>
               </section>
           </a>
           <a className="imgholder" href="https://dasantia89.github.io/Mod-1-Horiseon-Social-Solution-Services/"><img
